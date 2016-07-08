@@ -1,0 +1,21 @@
+<!DOCTYPE html >
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+</head>
+<body>
+<h1>index</h1>
+<h1>{{tag}}</h1>
+<form action="/doctuser/mypost/" method="post" enctype=”multipart/form-data”>
+{% csrf_token %}
+	UserID:<input type="text" name="UserID"><br>
+    UserTypeID:<input type="text" name="UserTypeID"><br>
+    UserName:<input type="text" name="UserName"><br>
+    UserIcon:<input type="file" name="UserIcon"><br>
+    <!-- UserDetail:<input type="text" name="UserDetail"><br> -->
+<input type="submit" value="Vote" />
+</form>
+</form>
+</body>
+</html>
